@@ -1,0 +1,12 @@
+<div>
+    <h3>Child Component</h3>
+    <p><strong>Input Data:</strong> {{ data.value }}</p>
+    <p><strong>Child Data:</strong> {{ childData }}</p>
+    <button (click)="updateChildData()">Update Child Data</button>
+    <button (click)="resetChildData()">Reset Child Data</button>
+    <br />
+    <p><strong>Service Message:</strong> {{ getServiceMessage() }}</p>
+    <button (click)="updateServiceMessage()">Update Service Message</button>
+    <button (click)="resetServiceMessage()">Reset Service Message</button>
+  </div>
+  

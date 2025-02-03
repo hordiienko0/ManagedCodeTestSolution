@@ -1,0 +1,16 @@
+<div>
+    <h2>Parent Component</h2>
+    <p><strong>Primitive Data:</strong> {{ primitiveData }}</p>
+    <p><strong>Non-Primitive Data:</strong> {{ nonPrimitiveData.value }}</p>
+    <button (click)="updatePrimitiveData()">Update Primitive Data</button>
+    <button (click)="resetPrimitiveData()">Reset Primitive Data</button>
+    <br />
+    <button (click)="updateNonPrimitiveData()">Update Non-Primitive Data</button>
+    <button (click)="resetNonPrimitiveData()">Reset Non-Primitive Data</button>
+    <br />
+    <p><strong>Service Message:</strong> {{ getServiceMessage() }}</p>
+    <button (click)="updateServiceMessage()">Update Service Message</button>
+    <button (click)="resetServiceMessage()">Reset Service Message</button>
+    <hr />
+    <app-child [data]="nonPrimitiveData"></app-child>
+</div>  
